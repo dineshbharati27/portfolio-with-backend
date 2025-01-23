@@ -53,7 +53,7 @@ const Contact = ({ bgcolor, darkmode }) => {
 
   const mongoSave = async () => {
     try {
-      const response = await axios.post('http://localhost:3001/api/contact', {name, email, message});
+      const response = await axios.post('https://portfolio-with-backend.onrender.com/api/contact', {name, email, message});
       if (response.data.success) {
         setName("")
         setEmail("")
